@@ -45,15 +45,27 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("ten");
 
 
+        // WHILE LOOP
 
-        int index = 0;
+//        int index = 0;
+//
+//        while (index < words.size()) {
+//            LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+//            TextView wordView = new TextView(this);
+//            wordView.setText(words.get(index));
+//            rootView.addView(wordView);
+//
+//            //Update the counter variable
+//            index++;
+//        }
 
-        while (index < words.size()) {
+        // FOR LOOP
+
+        for (int index = 0; index < words.size(); index++) {
             LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
             TextView wordView = new TextView(this);
             wordView.setText(words.get(index));
             rootView.addView(wordView);
-            index++;
         }
 
     }
