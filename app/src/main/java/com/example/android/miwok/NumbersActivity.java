@@ -44,10 +44,17 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("nine");
         words.add("ten");
 
-        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-        TextView wordView = new TextView(this);
-        wordView.setText(words.get(0));
-        rootView.addView(wordView);
+
+
+        int index = 0;
+
+        while (index < words.size()) {
+            LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(index));
+            rootView.addView(wordView);
+            index++;
+        }
 
     }
 
